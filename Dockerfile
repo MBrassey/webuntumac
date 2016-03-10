@@ -37,11 +37,11 @@ COPY initialize/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY initialize/initialize.htm /var/www/index.html
 COPY initialize/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 COPY initialize/.htaccess /var/www/.htaccess
+COPY initialize/pm2.style.css /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js/static/style.css
 COPY initialize/user.css /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js/static/user.css
 COPY initialize/user.js /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js/static/user.js
 COPY initialize/index.tty /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js/static/index.html
 COPY initialize/config.py /usr/share/terminator/terminatorlib/config.py
-COPY initialize/pm2.style.css /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js/static/style.css
 COPY initialize/motd /etc/motd
 COPY launch /var/www/launch
 

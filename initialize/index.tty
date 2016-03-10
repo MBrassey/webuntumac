@@ -1,9 +1,9 @@
 <!doctype html>
-<title>certDragon</title>
+<title>webuntu</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="user.css">
 
-<h1>certDragon</h1>
+<h1>webuntu</h1>
 
 <div id="help">
   <p>Click the titlebar to drag.</p>
