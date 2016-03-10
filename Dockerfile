@@ -7,9 +7,9 @@ ENV DEBIAN_FRONTEND noninteractive
 ADD initialize/startup.sh /startup.sh
 
 RUN apt-get update && apt-get install -y apache2 supervisor npm \
-    git x11vnc wget python python-numpy unzip Xvfb firefox openbox feh nano menu terminator 
+    git x11vnc wget python python-numpy unzip Xvfb firefox openbox feh nano menu terminator
 
-RUN mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/supervisor 
+RUN mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/supervisor
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN npm install pm2 -g
 RUN pm2 update
@@ -30,22 +30,21 @@ RUN wget \
   unzip websocketd-0.2.10-linux_amd64.zip -d . && \
   mv websocketd /usr/local/bin && \
   rm -f websocketd-0.2.10-linux_amd64.zip
-  
+
 RUN git clone https://github.com/joewalnes/web-vmstats.git /var/www/web-vmstats
 
 COPY initialize/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY initialize/initialize.htm /var/www/index.html
-COPY initialize/000-default.conf /etc/apache2/sites-enabled/000-default.conf 
+COPY initialize/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 COPY initialize/.htaccess /var/www/.htaccess
 COPY initialize/user.css /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js/static/user.css
 COPY initialize/user.js /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js/static/user.js
 COPY initialize/index.tty /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js/static/index.html
 COPY initialize/config.py /usr/share/terminator/terminatorlib/config.py
+COPY initialize/pm2.style.css /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js/static/style.css
 COPY initialize/motd /etc/motd
 COPY launch /var/www/launch
 
 
-EXPOSE 80 8010 369 
+EXPOSE 80 8010 369
 CMD ["/usr/bin/supervisord"]
-
-
