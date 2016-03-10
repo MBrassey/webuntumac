@@ -19,7 +19,7 @@ web-gui: Cannot Type, Keyboard Input Not Detected.
 </strong><br>
 Click the title bar at the top of the novnc ubuntu window that says:
 <br><br><code>
-Connected (unencrypted) to: certDragon:1
+Connected (unencrypted) to: webuntu:1
 </code><br><br>
 Your keyboard input now functions as expected.</p>
 
