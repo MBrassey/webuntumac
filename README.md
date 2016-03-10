@@ -77,8 +77,5 @@ Connected (unencrypted) to: webuntu:1
 Your keyboard input now functions as expected.
 <h1>Credits</h1>
 <pre>
-Wallpaper: GPL Spice and Wolf - so she is a wolf not a fox, but hey she's still "foxy"
-</pre>
-<pre>
 System Platforms: ubuntu, pm2, noVNC, web-vmstats
 </pre>
