@@ -9,7 +9,7 @@
   bottom: 0;
   left: 0;
   z-index: 0;
-  
+
   /* non-critical appearance styles */
   list-style: none;
   background: #111;
@@ -35,7 +35,7 @@
 }
 
 .nav-item a:hover {
-  color: #551a8b;
+  color: #772953;
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(85,26,139,0.65) 100%);
 }
 
@@ -51,7 +51,7 @@
   bottom: 100%;
   left: 0;
   z-index: 1;
-  
+
   /* non-critical apperance styles */
   padding: 4em;
   background-image: ubuntu_bg.png;
@@ -70,7 +70,7 @@ label[for="nav-trigger"] {
   position: fixed;
   left: 15px; top: 15px;
   z-index: 2;
-  
+
   /* non-critical apperance styles */
   height: 30px;
   width: 30px;
