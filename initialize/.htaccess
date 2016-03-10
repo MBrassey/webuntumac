@@ -1,0 +1,5 @@
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+RewriteRule ^ /cD/index.html
+#RewriteRule ^/(.*) /cD/$1 [NC,L]
