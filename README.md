@@ -14,7 +14,7 @@ webuntu is a docker container usable on Windows, Linux and Mac. The container al
 </ul>
 <img src="https://github.com/mattinclude/webuntu/blob/master/initialize/foxy_screen.jpg">
 
-<h1>Run from Docker index</h1>
+<h1>Run from Docker index ( install )</h1>
 You can pull, install & start the webuntu container using this single command within the Docker Terminal:
 <pre>
 docker run -h webuntu -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntu
