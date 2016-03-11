@@ -47,10 +47,6 @@ a:visited {
   color: #772953;
 }
 
-a:active {
-  color: #772953;
-}
-
 /* Site Wrapper - Everything that isn't navigation */
 .site-wrap {
   /* Critical position and size styles */
