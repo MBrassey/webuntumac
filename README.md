@@ -1,6 +1,6 @@
 <h1>webuntu </h1>
 
-webuntu is a docker container usable on Windows, Linux and Mac. The container allows you to launch an ubuntu gui, bash-shell and system statistics from your web browser. This container is one of the quickest ways to run a Linux shell on Windows and Mac. This container offers a useful base image, edit the Dockerfile and research/fork/clone this repository to customize your own sandboxed host container.  
+webuntu is a docker container usable on Windows, Linux and Mac. The container allows you to launch an ubuntu openbox gui, bash-shell and system statistics from your web browser. This container is one of the quickest ways to run a Linux shell on Windows and Mac. This container offers a useful base image, edit the Dockerfile and research/fork/clone this repository to customize your own sandboxed host container.  
 
 <h1>Prerequisites</h1>
 * <a href="https://www.docker.com/">Docker</a>
