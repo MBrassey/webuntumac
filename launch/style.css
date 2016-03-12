@@ -119,6 +119,8 @@ code {
 }
 
 .nav-logo {
+  height: 130px;
+  width: 130px;
   padding: 0;
   margin: 0;
 }
