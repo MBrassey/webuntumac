@@ -1,6 +1,7 @@
+
 <head>
-<link rel="stylesheet" type="text/css" href="launch/style.css">
-<link rel="shortcut icon" type="image/png" href="launch/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../launch/style.css">
+<link rel="shortcut icon" type="image/png" href="../launch/favicon.ico"/>
 </head>
 <script type="text/javascript">
 function openWindow1()
@@ -11,38 +12,36 @@ window.open(URL,"webuntu web-shell","titlebar=no,toolbar=no,location=no,status=n
 function openWindow2()
 {
 var URL = "http://ubuntu:webuntu@192.168.99.100:6080";
-window.open(URL,"webuntu web-gui","titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=1620,height=900");
+window.open(URL,"webuntu web-gui","titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=1620,height=900");
 }
 function openWindow3()
 {
 var URL = "http://192.168.99.100:88";
-window.open(URL,"webuntu system-status","titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=650,height=940");
+window.open(URL,"webuntu system-status","titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=650,height=940");
 }
 </script>
 
 <ul class="navigation">
-	<li class="nav-item"><a href="launch/home.htm">home</a></li>
-	<li class="nav-item"><a href="launch/shell.htm">web-shell</a></li>
+	<li class="nav-item"><a href="../launch/home.htm">home</a></li>
+	<li class="nav-item"><a href="../launch/shell.htm">web-shell</a></li>
 	<li class="nav-item"><a onclick="openWindow1()" href="#">popout-shell &#x25A2;</a>
-	<li class="nav-item"><a href="launch/gui.htm">web-gui</a></li>
+	<li class="nav-item"><a href="../launch/gui.htm">web-gui</a></li>
 	<li class="nav-item"><a onclick="openWindow2()" href="#">popout-gui &#x25A2;</a>
-	<li class="nav-item"><a href="launch/systat.htm">system-status</a></li>
+	<li class="nav-item"><a href="../launch/systat.htm">system-status</a></li>
 	<li class="nav-item"><a onclick="openWindow3()" href="#">popout-status &#x25A2;</a>
-	<li class="nav-item"><a href="launch/readme.htm">README</a></li>
+	<li class="nav-item"><a href="../launch/readme.htm">README</a></li>
+  <li><img class="nav-item nav-logo" src="../launch/ulogo.png" width="130" height="130" /></li>
 </ul>
-
-<img src="launch/ulogo.png" height="130" width="130">
 
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
 <label for="nav-trigger"></label>
 
 <div class="site-wrap">
-  <h1><img src="launch/foxy.png"> webuntu</h1>
-  <h3>Ubuntu GUI, Shell & Statistics accessed from the web browser.</h3>
+     <h1><img src="../launch/foxy.png"> webuntu</h1>
+  <h3>Ubuntu GUI, Shell & Statistics accessed from the web browser. </h3>
 
-  <p>webuntu is a dockerized custom host deployment platform that allows you to launch a fully functional ubuntu web-shell, web-gui & system-statistics in 3 minutes with one command. This is designed to be a useful base image, edit the Dockerfile and research/fork/clone this repository to customize your own sandboxed host container.
+  <p>Use the navigation menu appearing in the top left corner of this page. You will find that webuntu comes installed with an ubuntu host, accessable via the web-shell & web-gui. Go ahead and explore your new system, browse the web, write a bash script and install some useful software and services! The changes you make on the webuntu host will be persistant untill you remove the image or stop the Docker container. For more information, navigate to the README.</p>
   <p><strong>Browsers supported:</strong> Firefox 3.5+, Chrome any, Safari 3.2+, Opera 9.5+</p>
-  <p></p>
-
-  <p>Created by Matthew L. Abrasax <a href="https://github.com/mattinclude"><strong>GitHub</strong></a>.</p>
+  <br>
+  <p>Created by Matthew L. Abrasax <a href="https://github.com/mattinclude">GitHub</a>.</p>
 </div>

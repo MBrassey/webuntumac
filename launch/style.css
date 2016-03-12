@@ -119,6 +119,8 @@ code {
 }
 
 .nav-logo {
+  padding: 0;
+  margin: 0;
 }
 
 /* Micro reset */
