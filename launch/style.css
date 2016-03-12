@@ -118,12 +118,6 @@ code {
 	background: #772953;
 }
 
-.glyph
-{
-    background-image: url('http://www.sizzledcore.com/wp-content/themes/SizzledCore-7.0/images/facebook.png');
-    background-repeat: no-repeat;
-    background-position: 50% 10px;
-}
 
 /* Micro reset */
 *,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
