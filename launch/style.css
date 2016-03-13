@@ -121,8 +121,8 @@ code {
 .nav-logo {
   height: 130px;
   width: 130px;
-  padding-left: 2cm;
-  margin: 0;
+  padding: 0;
+  margin-left: 1cm;
 }
 
 /* Micro reset */
