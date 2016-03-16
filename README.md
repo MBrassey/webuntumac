@@ -12,7 +12,7 @@ webuntu is a docker container usable on Windows, Linux and Mac. The container al
   <li>openbox [web] GUI with firefox pre-installed, multiple desktops for productivity.</li>
   <li>vmstat [web] live system statistics.</li>
 </ul>
-<img src="https://github.com/mattinclude/webuntu/blob/master/initialize/foxy_screen.jpg">
+<img src="https://github.com/mattinclude/webuntu/blob/master/initialize/webuntu_screenie.png">
 
 <h1>Run from Docker index ( install )</h1>
 You can pull, install & start the webuntu container using this single command within the Docker Terminal:
