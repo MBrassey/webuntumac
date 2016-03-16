@@ -130,8 +130,7 @@ code {
   height: 80px;
   width: 80px;
   padding: 0;
-  margin-left: .6cm;
-  margin-top: .2cm;
+  margin: 0;
 }
 
 /* Micro reset */
