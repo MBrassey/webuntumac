@@ -122,14 +122,16 @@ code {
   padding: 0;
   margin-left: .6cm;
   margin-top: .2cm;
-  background-image: url("/launch/ulogo.png");
+  width: 130px
+  heit: 130px
+  background: url("/launch/ulogo.png");
   background-size: 130px 130px;
 }
 
 .u-logo {
   padding: 0;
   margin: 0;
-  background-image: url("/launch/ulogo.png");
+  background: url("/launch/ulogo.png");
   background-size: 80px 80px;
 }
 
