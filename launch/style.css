@@ -119,20 +119,18 @@ code {
 }
 
 .nav-logo {
-  height: 130px;
-  width: 130px;
   padding: 0;
   margin-left: .6cm;
   margin-top: .2cm;
   background-image: url("/launch/ulogo.png");
+  background-size: 130px 130px;
 }
 
 .u-logo {
-  height: 80px;
-  width: 80px;
   padding: 0;
   margin: 0;
   background-image: url("/launch/ulogo.png");
+  background-size: 80px 80px;
 }
 
 /* Micro reset */
