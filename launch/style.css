@@ -122,15 +122,15 @@ code {
   padding: 0;
   margin-left: .6cm;
   margin-top: .2cm;
-  background: url("/launch/ulogo.png");
-  background-size: 130px 130px;
+  width: 130px;
+  height: 130px;
 }
 
 .u-logo {
   padding: 0;
   margin: 0;
-  background: url("/launch/ulogo.png");
-  background-size: 80px 80px;
+  width: 80px;
+  height: 80px;
 }
 
 /* Micro reset */
