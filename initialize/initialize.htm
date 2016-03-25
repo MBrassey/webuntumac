@@ -5,7 +5,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript">
     $( document ).ready( function() {
-        $( 'a.nav-item' ).click( function( e ) {
+        $( 'a.dynamicLoad' ).click( function( e ) {
             e.preventDefault();   // prevent the browser from following the link
             e.stopPropagation();  // prevent the browser from following the link
 
@@ -33,14 +33,14 @@ window.open(URL,"webuntu system-status","titlebar=no,toolbar=no,location=no,stat
 </head>
 
 <ul class="navigation">
-	<li class="nav-item"><a href="../launch/home.htm">home</a></li>
-	<li class="nav-item"><a href="../launch/shell.htm">web-shell</a></li>
+	<li class="nav-item"><a href="../launch/home.htm" class="dynamicLoad">home</a></li>
+	<li class="nav-item"><a href="../launch/shell.htm" class="dynamicLoad">web-shell</a></li>
 	<li class="nav-item"><a onclick="openWindow1()" href="#">popout-shell &#x25A2;</a>
-	<li class="nav-item"><a href="../launch/gui.htm">web-gui</a></li>
+	<li class="nav-item"><a href="../launch/gui.htm" class="dynamicLoad">web-gui</a></li>
 	<li class="nav-item"><a onclick="openWindow2()" href="#">popout-gui &#x25A2;</a>
-	<li class="nav-item"><a href="../launch/systat.htm">system-status</a></li>
+	<li class="nav-item"><a href="../launch/systat.htm" class="dynamicLoad">system-status</a></li>
 	<li class="nav-item"><a onclick="openWindow3()" href="#">popout-status &#x25A2;</a>
-	<li class="nav-item"><a href="../launch/readme.htm">README</a></li>
+	<li class="nav-item"><a href="../launch/readme.htm" class="dynamicLoad">README</a></li>
   <li><img class="nav-item nav-logo" src="../launch/ulogo.png"/></li>
 </ul>
 
