@@ -6,9 +6,9 @@
 <script type="text/javascript">
     $( document ).ready( function() {
         $( 'a.dynamicLoad' ).click( function( e ) {
-        $( '#site-wrap' ).load( $( this ).attr( 'href' ) );
 					  e.preventDefault();   // prevent the browser from following the link
             e.stopPropagation();  // prevent the browser from following the link
+			      $( '#site-wrap' ).load( $( this ).attr( 'href' ) );
         });
     });
 </script>
