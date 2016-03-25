@@ -2,13 +2,13 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../launch/style.css">
 <link rel="shortcut icon" type="image/png" href="../launch/favicon.ico"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script type="text/javascript">
     $( document ).ready( function() {
         $( 'a.dynamicLoad' ).click( function( e ) {
-            e.preventDefault();   // prevent the browser from following the link
+        $( '#site-wrap' ).load( $( this ).attr( 'href' ) );
+					  e.preventDefault();   // prevent the browser from following the link
             e.stopPropagation();  // prevent the browser from following the link
-            $( '#awesome' ).load( $( this ).attr( 'href' ) );
         });
     });
 </script>
@@ -45,7 +45,6 @@ window.open(URL,"webuntu system-status","titlebar=no,toolbar=no,location=no,stat
 
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
 <label for="nav-trigger"></label>
-<div class="awesome"></div>
 <div class="site-wrap">
   <h1><img class="u-logo" src="../launch/ulogo.png"> webuntu</h1>
   <h3>Ubuntu GUI, Shell & Statistics accessed from the web browser. </h3>
