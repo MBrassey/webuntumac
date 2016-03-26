@@ -2,18 +2,27 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../launch/style.css">
 <link rel="shortcut icon" type="image/png" href="../launch/favicon.ico"/>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript">
-$(function(){
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Set trigger and container variables
+        var trigger = $('#nav-item ul li a'),
+            container = $('#content');
 
-  $('a').click(function(e){
-    var url = $(this).attr('href');
-    $('#site-wrap').load(url);
-    e.preventDefault();
-  });
+        // Fire on click
+        trigger.on('click', function(){
+          // Set $this for re-use. Set target from data attribute
+          var $this = $(this),
+            target = $this.data('target');
 
-});
-</script>
+          // Load target page into container
+          container.load(target + '.php');
+
+          // Stop normal link behavior
+          return false;
+        });
+      });
+    </script>
 <script type="text/javascript">
 function openWindow1()
 {
