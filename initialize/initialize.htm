@@ -4,12 +4,15 @@
 <link rel="shortcut icon" type="image/png" href="../launch/favicon.ico"/>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">
-	  $(".loader").click( function(){
-		 e.preventDefault();
-		 $("#content").empty();
-	   $("#content").load($(this).attr("href"));
-		 return false;
-		});
+$(function(){
+
+  $('a').click(function(e){
+    var url = $(this).attr('href');
+    $('site-wrap').load(url);
+    e.preventDefault();
+  });
+
+});
 </script>
 <script type="text/javascript">
 function openWindow1()
@@ -31,14 +34,14 @@ window.open(URL,"webuntu system-status","titlebar=no,toolbar=no,location=no,stat
 </head>
 
 <ul class="navigation">
-	<li class="nav-item"><a href="../launch/home.htm" class="loader">home</a></li>
-	<li class="nav-item"><a href="../launch/shell.htm" class="loader">web-shell</a></li>
+	<li class="nav-item"><a href="../launch/home.htm" >home</a></li>
+	<li class="nav-item"><a href="../launch/shell.htm" >web-shell</a></li>
 	<li class="nav-item"><a onclick="openWindow1()" href="#">popout-shell &#x25A2;</a>
-	<li class="nav-item"><a href="../launch/gui.htm" class="loader">web-gui</a></li>
+	<li class="nav-item"><a href="../launch/gui.htm" >web-gui</a></li>
 	<li class="nav-item"><a onclick="openWindow2()" href="#">popout-gui &#x25A2;</a>
-	<li class="nav-item"><a href="../launch/systat.htm" class="loader">system-status</a></li>
+	<li class="nav-item"><a href="../launch/systat.htm" >system-status</a></li>
 	<li class="nav-item"><a onclick="openWindow3()" href="#">popout-status &#x25A2;</a>
-	<li class="nav-item"><a href="../launch/readme.htm" class="loader">README</a></li>
+	<li class="nav-item"><a href="../launch/readme.htm" >README</a></li>
   <li><img class="nav-item nav-logo" src="../launch/ulogo.png"/></li>
 </ul>
 
