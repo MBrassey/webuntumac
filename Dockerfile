@@ -44,7 +44,7 @@ COPY initialize/index.tty /root/.pm2/node_modules/pm2-webshell/node_modules/tty.
 COPY initialize/config.py /usr/share/terminator/terminatorlib/config.py
 COPY initialize/motd /etc/motd
 COPY launch /var/www/launch
-COPY test /var/www/
+COPY test /var/www/test
 
 
 EXPOSE 80 8010 369
