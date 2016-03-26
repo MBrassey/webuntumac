@@ -1,1 +1,0 @@
-<br>Footer Content from footer.php</br>
