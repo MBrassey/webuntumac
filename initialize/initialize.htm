@@ -4,7 +4,8 @@
 <link rel="shortcut icon" type="image/png" href="../launch/favicon.ico"/>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">
-	  $("a.loader").click( function(){
+	  $(".loader").click( function(){
+		 e.preventDefault();
 		 $("#content").empty();
 	   $("#content").load($(this).attr("href"));
 		 return false;
