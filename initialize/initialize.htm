@@ -2,12 +2,13 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../launch/style.css">
 <link rel="shortcut icon" type="image/png" href="../launch/favicon.ico"/>
-<script src="../launch/jquery.js"></script>
-<script type="text/javascript">
-$(".loader").click( function(){
- e.preventDefault();
- $("#site-wrap").load($(this).attr("href"));
- return false;
+<script src="launch/jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $("a").click(function(){
+     $("#content").load($(this).attr("href"));
+      return false;
+    });
 });
 </script>
 <script type="text/javascript">
