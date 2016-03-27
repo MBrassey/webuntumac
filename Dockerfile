@@ -44,8 +44,7 @@ COPY initialize/index.tty /root/.pm2/node_modules/pm2-webshell/node_modules/tty.
 COPY initialize/config.py /usr/share/terminator/terminatorlib/config.py
 COPY initialize/motd /etc/motd
 COPY launch /var/www/launch
-COPY test2.htm /var/www/test2.htm
-COPY 1.htm /var/www/1.htm
+
 
 EXPOSE 80 8010 369
 CMD ["/usr/bin/supervisord"]
