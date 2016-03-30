@@ -11,6 +11,15 @@ $(document).ready(function(){
     });
 });
 </script>
+<script>
+$(function() {
+$(“.popout”).click(function() {
+window.open(this.href);
+return false;
+});
+});
+</script>
+
 <script type="text/javascript">
 function openWindow1()
 {
@@ -33,7 +42,7 @@ window.open(URL,"webuntu system-status","titlebar=no,toolbar=no,location=no,stat
 <ul class="navigation">
 	<li class="nav-item"><a href="../launch/home.htm" >home</a></li>
 	<li class="nav-item"><a href="../launch/shell.htm" >web-shell</a></li>
-	<li class="nav-item"><a onclick="openWindow1()" href="#">popout-shell &#x25A2;</a>
+	<li class="nav-item"><a class="popout" href="#">popout-shell &#x25A2;</a>
 	<li class="nav-item"><a href="../launch/gui.htm" >web-gui</a></li>
 	<li class="nav-item"><a onclick="openWindow2()" href="#">popout-gui &#x25A2;</a>
 	<li class="nav-item"><a href="../launch/systat.htm" >system-status</a></li>
