@@ -12,33 +12,13 @@ $(document).ready(function(){
 });
 </script>
 
-<script type="text/javascript">
-function openWindow1()
-{
-var URL = "http://ubuntu:webuntu@192.168.99.100:369";
-window.open(URL,"webuntu web-shell","titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=700,height=600");
-}
-function openWindow2()
-{
-var URL = "http://ubuntu:webuntu@192.168.99.100:6080";
-window.open(URL,"webuntu web-gui","titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=1620,height=900");
-}
-function openWindow3()
-{
-var URL = "http://192.168.99.100:88";
-window.open(URL,"webuntu system-status","titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=650,height=940");
-}
-</script>
 </head>
 <body>
 <ul class="navigation">
 	<li class="nav-item"><a class="fastload" href="../launch/home.htm" >home</a></li>
-	<li class="nav-item"><a href="../launch/shell.htm" >web-shell</a></li>
-	<li class="nav-item"><a onclick="openWindow1()">popout-shell &#x25A2;</a>
-	<li class="nav-item"><a href="../launch/gui.htm" >web-gui</a></li>
-	<li class="nav-item"><a onclick="openWindow2()" href="#">popout-gui &#x25A2;</a>
-	<li class="nav-item"><a href="../launch/systat.htm" >system-status</a></li>
-	<li class="nav-item"><a onclick="openWindow3()" href="#">popout-status &#x25A2;</a>
+	<li class="nav-item"><a href="../launch/shell.htm" >web-shell &#x25A2;</a></li>
+	<li class="nav-item"><a href="../launch/gui.htm" >web-gui &#x25A2;</a></li>
+	<li class="nav-item"><a href="../launch/systat.htm" >system-status &#x25A2;</a></li>
 	<li class="nav-item"><a href="../launch/readme.md" >README</a></li>
   <li><img class="nav-item nav-logo" src="../launch/ulogo.png"/></li>
 </ul>
