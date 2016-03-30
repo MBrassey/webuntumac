@@ -5,7 +5,7 @@
 <script src="../launch/jquery.js"></script>
 <script>
 $(document).ready(function(){
-    $("a").click(function(){
+    $(".fastload").click(function(){
      $("#content").load($(this).attr("href"));
       return false;
     });
@@ -40,7 +40,7 @@ window.open(URL,"webuntu system-status","titlebar=no,toolbar=no,location=no,stat
 </head>
 <body>
 <ul class="navigation">
-	<li class="nav-item"><a href="../launch/home.htm" >home</a></li>
+	<li class="nav-item"><a class="fastload" href="../launch/home.htm" >home</a></li>
 	<li class="nav-item"><a href="../launch/shell.htm" >web-shell</a></li>
 	<li class="nav-item"><a class="popout" href="http://ubuntu:webuntu@192.168.99.100:369">popout-shell &#x25A2;</a>
 	<li class="nav-item"><a href="../launch/gui.htm" >web-gui</a></li>
