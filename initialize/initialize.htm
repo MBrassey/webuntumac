@@ -5,18 +5,10 @@
 <script src="../launch/jquery.js"></script>
 <script>
 $(document).ready(function(){
-    $(".fastload").click(function(){
+    $("a").click(function(){
      $("#content").load($(this).attr("href"));
       return false;
     });
-});
-</script>
-<script>
-$(function() {
-$(“.popout”).click(function() {
-window.open(this.href);
-return false;
-});
 });
 </script>
 
