@@ -15,10 +15,10 @@
   background: #111;
 }
 .navigation a:hover span {display: block;
-   position: absolute; top: 600px; left: 0; width: 125px;
+   position: absolute; top: 440px; left: 0; width: 125px;
    padding: 5px; margin: 10px; z-index: 100;
-   color: #772953; background: #333333;
-   font: 10px Verdana, sans-serif; text-align: center;}
+   color: #772953; background: #111;
+   font: 14px Verdana, sans-serif; text-align: center;}
 
 /* Navigation Menu - List items */
 .nav-item {
