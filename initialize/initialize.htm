@@ -3,14 +3,16 @@
 <link rel="stylesheet" type="text/css" href="../launch/style.css">
 <link rel="shortcut icon" type="image/png" href="../launch/favicon.ico"/>
 <script src="../launch/jquery.js"></script>
+
 <script>
 $(document).ready(function(){
-    $("a #fastload").click(function(){
+    $("a").click(function(){
      $("#content").load($(this).attr("href"));
       return false;
     });
 });
 </script>
+
 <script>
 $(document).ready(function() {
    $(' a #popout').click(function() {
@@ -27,7 +29,7 @@ $(document).ready(function() {
 </head>
 <body>
 <ul class="navigation">
-	<li class="nav-item"><a class="fastload" href="../launch/home.htm" >home</a></li>
+	<li class="nav-item"><a href="../launch/home.htm" >home</a></li>
 	<li class="nav-item"><a href="../launch/shell.htm">web-shell<span>pm2 advanced node.js root web shell and process manager. Try "pm2 monit" or "pm2 list".</span></a>
 	<a href="http://ubuntu:webuntu@192.168.99.100:369" class="popout" id="popout">&#x25A2;</a></li>
 	<li class="nav-item"><a href="../launch/gui.htm" >web-gui &#x25A2;<span>noVNC web-gui, right click for openbox menu. Four Desktops are allocated by default.</span></a></li>
