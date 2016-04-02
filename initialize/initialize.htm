@@ -4,31 +4,31 @@
 <link rel="shortcut icon" type="image/png" href="../launch/favicon.ico"/>
 <script src="../launch/jquery.js"></script>
 <script>
-var booShift = false;
 // ****************************************** //
 // Global variables
 // ****************************************** //
-$(document).ready(function() {
-
-    // ****************************************** //
-    // Keyboard handlers
-    // ****************************************** //
-    // Detect keydown events and reset if keyup or page focus is lost
-    $(document).focus(function() {
+var booShift = false;
+// ****************************************** //
+// Keyboard handlers
+// ****************************************** //
+// Detect keydown events and reset if keyup or page focus is lost
+$(document).focus(function() {
+    booShift = false;
+});
+$(document).keydown(function(e) {
+    if (e.which == 16) {
+        booShift = true;
+    } else if (e.which == 27) {
+        showHide("close");
+    }
+});
+$(document).keyup(function(e) {
+    if (e.which == 16) {
         booShift = false;
-    });
-    $(document).keydown(function(e) {
-        if (e.which == 16) {
-            booShift = true;
-        } else if (e.which == 27) {
-            showHide("close");
-        }
-    });
-    $(document).keyup(function(e) {
-        if (e.which == 16) {
-            booShift = false;
-        }
-    });
+    }
+});
+
+$(document).ready(function() {
 
     $(".fastload").click(function() {
 
@@ -37,6 +37,7 @@ $(document).ready(function() {
             if (window.focus) {
                 NWin.focus();
             }
+            booShift = false;
         } else {
             $("#content").load($(this).attr("href"));
             return false;
