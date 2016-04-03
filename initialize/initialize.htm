@@ -31,9 +31,8 @@ $(document).keyup(function(e) {
 $(document).ready(function() {
 
     $(".fastload").click(function() {
-
-        if (booShift) {
-            var NWin = window.open($(this).prop('href'), '', 'height=800,width=800');
+        if (booShift && $(this).hasClass("popout")) {
+            var NWin = window.open($(this).prop('href'), '', 'height=700,width=700');
             if (window.focus) {
                 NWin.focus();
             }
@@ -42,7 +41,6 @@ $(document).ready(function() {
             $("#content").load($(this).attr("href"));
             return false;
         }
-
     });
 });
 </script>
@@ -51,9 +49,9 @@ $(document).ready(function() {
 <body>
 <ul class="navigation">
 	<li class="nav-item"><a href="../launch/home.htm" class="fastload">home</a></li>
-	<li class="nav-item"><a href="../launch/shell.htm" class="fastload">web-shell &#x25A2;<span>pm2 advanced node.js root web shell and process manager. Try "pm2 monit" or "pm2 list". SHIFT-Click to open web-shell in a popup window.</span></a></li>
-	<li class="nav-item"><a href="../launch/gui.htm" class="fastload">web-gui &#x25A2;<span>noVNC web-gui, right click for openbox menu. Four Desktops are allocated by default. SHIFT-Click to open web-gui in a popup window.</span></a></li>
-	<li class="nav-item"><a href="../launch/systat.htm" class="fastload">system-status &#x25A2;<span>web-vmstats is a tiny application that streams these stats over a WebSocket using websocketd and charts it using SmoothieCharts. SHIFT-Click to open system-status in a popup window.</span></a></li>
+	<li class="nav-item"><a href="../launch/shell.htm" class="fastload popout">web-shell &#x25A2;<span>pm2 advanced node.js root web shell and process manager. Try "pm2 monit" or "pm2 list". SHIFT-Click to open web-shell in a popup window.</span></a></li>
+	<li class="nav-item"><a href="../launch/gui.htm" class="fastload popout">web-gui &#x25A2;<span>noVNC web-gui, right click for openbox menu. Four Desktops are allocated by default. SHIFT-Click to open web-gui in a popup window.</span></a></li>
+	<li class="nav-item"><a href="../launch/systat.htm" class="fastload popout">system-status &#x25A2;<span>web-vmstats is a tiny application that streams these stats over a WebSocket using websocketd and charts it using SmoothieCharts. SHIFT-Click to open system-status in a popup window.</span></a></li>
 	<li class="nav-item"><a href="../launch/readme.md" class="fastload">README</a></li>
   <li><img class="nav-item nav-logo" src="../launch/ulogo.png"/></li>
 </ul>
