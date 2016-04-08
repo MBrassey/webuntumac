@@ -1,70 +1,74 @@
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="../launch/style.css">
-<link rel="shortcut icon" type="image/png" href="../launch/favicon.ico"/>
-<script src="../launch/jquery.js"></script>
-<script>
-// ****************************************** //
-// Global variables
-// ****************************************** //
-var booShift = false;
-// ****************************************** //
-// Keyboard handlers
-// ****************************************** //
-// Detect keydown events and reset if keyup or page focus is lost
-$(document).focus(function() {
-    booShift = false;
-});
-$(document).keydown(function(e) {
-    if (e.which == 16) {
-        booShift = true;
-    } else if (e.which == 27) {
-        showHide("close");
-    }
-});
-$(document).keyup(function(e) {
-    if (e.which == 16) {
-        booShift = false;
-    }
-});
-
-$(document).ready(function() {
-
-    $(".fastload").click(function() {
-        if (booShift && $(this).hasClass("popout")) {
-            var NWin = window.open($(this).prop('href'), '', 'height=700,width=700');
-            if (window.focus) {
-                NWin.focus();
-            }
+    <link rel="stylesheet" type="text/css" href="../launch/style.css">
+    <link rel="shortcut icon" type="image/png" href="../launch/favicon.ico" />
+    <script src="../launch/jquery.js"></script>
+    <script>
+        // ****************************************** //
+        // Global variables
+        // ****************************************** //
+        var booShift = false;
+        // ****************************************** //
+        // Keyboard handlers
+        // ****************************************** //
+        // Detect keydown events and reset if keyup or page focus is lost
+        $(document).focus(function() {
             booShift = false;
-        } else {
-            $("#content").load($(this).attr("href"));
-            return false;
-        }
-    });
-});
-</script>
+        });
+        $(document).keydown(function(e) {
+            if (e.which == 16) {
+                booShift = true;
+            } else if (e.which == 27) {
+                showHide("close");
+            }
+        });
+        $(document).keyup(function(e) {
+            if (e.which == 16) {
+                booShift = false;
+            }
+        });
+        // ****************************************** //
+        // Dynamic Naavigation Menu
+        // ****************************************** //
+        // Popout link when SHIFT-KEY pressed, otherwise Quick load #content
+        $(document).ready(function() {
 
+            $(".fastload").click(function() {
+                if (booShift && $(this).hasClass("popout")) {
+                    var NWin = window.open($(this).prop('href'), '', 'height=700,width=700');
+                    if (window.focus) {
+                        NWin.focus();
+                    }
+                    booShift = false;
+                } else {
+                    $("#content").load($(this).attr("href"));
+                    return false;
+                }
+            });
+        });
+    </script>
 </head>
-<body>
-<ul class="navigation">
-	<li class="nav-item"><a href="../launch/home.htm" class="fastload">home</a></li>
-	<li class="nav-item"><a href="../launch/shell.htm" class="fastload popout">web-shell &#x25A2;<span>pm2 advanced node.js root web shell and process manager. Try "pm2 monit" or "pm2 list". SHIFT-Click to open web-shell in a popup window.</span></a></li>
-	<li class="nav-item"><a href="../launch/gui.htm" class="fastload popout">web-gui &#x25A2;<span>noVNC web-gui, right click for openbox menu. Four Desktops are allocated by default. SHIFT-Click to open web-gui in a popup window.</span></a></li>
-	<li class="nav-item"><a href="../launch/systat.htm" class="fastload popout">system-status &#x25A2;<span>web-vmstats is a tiny application that streams these stats over a WebSocket using websocketd and charts it using SmoothieCharts. SHIFT-Click to open system-status in a popup window.</span></a></li>
-	<li class="nav-item"><a href="../launch/readme.md" class="fastload">README</a></li>
-  <li><img class="nav-item nav-logo" src="../launch/ulogo.png"/></li>
-</ul>
 
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
-<div class="site-wrap" id="content">
-  <h1><img class="u-logo" src="../launch/ulogo.png"> webuntu</h1>
-  <h3>Ubuntu GUI, Shell & Statistics accessed from the web browser. </h3>
-  <p>Use the navigation menu appearing in the top left corner of this page. You will find that webuntu comes installed with an ubuntu host, accessable via the web-shell & web-gui. Go ahead and explore your new system, browse the web, write a bash script and install some useful software and services! The changes you make on the webuntu host will be persistant untill you remove the image or stop the Docker container. For more information, navigate to the README.</p>
-  <p><strong>Browsers supported:</strong> Firefox 3.5+, Chrome any, Safari 3.2+, Opera 9.5+</p>
-  <br>
-  <p>Created by Matthew L. Abrasax <a href="https://github.com/mattinclude">GitHub</a>.</p>
-</div>
+<body>
+    <ul class="navigation">
+        <li class="nav-item"><a href="../launch/home.htm" class="fastload">home</a></li>
+        <li class="nav-item"><a href="../launch/shell.htm" class="fastload popout">web-shell &#x25A2;<span>pm2 advanced node.js root web shell and process manager. Try "pm2 monit" or "pm2 list". SHIFT-Click to open web-shell in a popup window.</span></a></li>
+        <li class="nav-item"><a href="../launch/gui.htm" class="fastload popout">web-gui &#x25A2;<span>noVNC web-gui, right click for openbox menu. Four Desktops are allocated by default. SHIFT-Click to open web-gui in a popup window.</span></a></li>
+        <li class="nav-item"><a href="../launch/systat.htm" class="fastload popout">system-status &#x25A2;<span>web-vmstats is a tiny application that streams these stats over a WebSocket using websocketd and charts it using SmoothieCharts. SHIFT-Click to open system-status in a popup window.</span></a></li>
+        <li class="nav-item"><a href="../launch/readme.md" class="fastload">README</a></li>
+        <li><img class="nav-item nav-logo" src="../launch/ulogo.png" /></li>
+    </ul>
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+    <div class="site-wrap" id="content">
+        <h1><img class="u-logo" src="../launch/ulogo.png"> webuntu</h1>
+        <h3>Ubuntu GUI, Shell & Statistics accessed from the web browser. </h3>
+        <p>Use the navigation menu appearing in the top left corner of this page. You will find that webuntu comes installed with an ubuntu host, accessable via the web-shell & web-gui. Go ahead and explore your new system, browse the web, write a bash script and install some useful software and services! The changes you make on the webuntu host will be persistant untill you remove the image or stop the Docker container. For more information, navigate to the README.</p>
+        <p><strong>Browsers supported:</strong> Firefox 3.5+, Chrome any, Safari 3.2+, Opera 9.5+</p>
+        <br>
+        <p>Created by Matthew L. Abrasax <a href="https://github.com/mattinclude">GitHub</a>.</p>
+    </div>
 </body>
+
 </html>
