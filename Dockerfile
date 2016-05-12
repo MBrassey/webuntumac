@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.05
 
 MAINTAINER Matthew L. Abrasax version: 0.1
 
