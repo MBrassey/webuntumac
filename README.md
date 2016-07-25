@@ -1,7 +1,6 @@
 <h1>webuntumac </h1>
 
-webuntumac is a docker container usable on Windows, Linux and Mac. The container allows you to launch an ubuntu openbox gui, bash-shell and system statistics from your web browser. This container is one of the quickest ways to run a Linux GUI on Windows and Mac. This container offers a useful base image, edit the Dockerfile and research/fork/clone this repository to customize your own sandboxed host container.  
-
+webuntumac is a docker container usable on Windows, Linux and Mac. The container allows you to launch an ubuntu openbox gui, bash-shell and system statistics from your web browser. This container is one of the quickest ways to run a Linux GUI on Windows and Mac. This container offers a useful base image, edit the Dockerfile and research/fork/clone this repository to customize your own sandboxed host container.
 <h1>Prerequisites</h1>
 * <a href="https://www.docker.com/">Docker</a>
 * A web browser
