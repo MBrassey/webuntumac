@@ -1,5 +1,5 @@
 <h1>#README</h1>
-<p>If you do not find what you are looking for visit the project page: <a href="https://github.com/mattinclude/webuntu"><strong>here</strong></a></p>
+<p>If you do not find what you are looking for visit the project page: <a href="https://github.com/mattinclude/webuntumac"><strong>here</strong></a></p>
 
 <h1>Usage</h1>
 <p>
@@ -19,15 +19,15 @@ web-gui: Cannot Type, Keyboard Input Not Detected.
 </strong><br>
 Click the title bar at the top of the novnc ubuntu window that says:
 <br><br><code>
-Connected (unencrypted) to: webuntu:1
+Connected (unencrypted) to: webuntumac:1
 </code><br><br>
 Your keyboard input now functions as expected.</p>
 
 <h1>How to Uninstall</h1>
 <p>
-Stop & Remove webuntu using this command within the Docker Terminal:
+Stop & Remove webuntumac using this command within the Docker Terminal:
 <br><br><code>
-docker stop $(docker ps -a -q | grep -v mattinclude/webuntu) && docker rmi -f mattinclude/webuntu
+docker stop $(docker ps -a -q | grep -v mattinclude/webuntumac) && docker rmi -f mattinclude/webuntumac
 </code>
 <br><br>
 Stop / Remove ALL docker containers:

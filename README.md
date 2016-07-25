@@ -1,6 +1,6 @@
-<h1>webuntu </h1>
+<h1>webuntumac </h1>
 
-webuntu is a docker container usable on Windows, Linux and Mac. The container allows you to launch an ubuntu openbox gui, bash-shell and system statistics from your web browser. This container is one of the quickest ways to run a Linux GUI on Windows and Mac. This container offers a useful base image, edit the Dockerfile and research/fork/clone this repository to customize your own sandboxed host container.  
+webuntumac is a docker container usable on Windows, Linux and Mac. The container allows you to launch an ubuntu openbox gui, bash-shell and system statistics from your web browser. This container is one of the quickest ways to run a Linux GUI on Windows and Mac. This container offers a useful base image, edit the Dockerfile and research/fork/clone this repository to customize your own sandboxed host container.  
 
 <h1>Prerequisites</h1>
 * <a href="https://www.docker.com/">Docker</a>
@@ -12,34 +12,34 @@ webuntu is a docker container usable on Windows, Linux and Mac. The container al
   <li>openbox [web] GUI with firefox pre-installed, multiple desktops for productivity.</li>
   <li>vmstat [web] live system statistics.</li>
 </ul>
-<img src="https://github.com/mattinclude/webuntu/blob/master/initialize/webuntu_screenie.png">
+<img src="https://github.com/mattinclude/webuntumac/blob/master/initialize/webuntumac_screenie.png">
 
 <h1>Run from Docker index ( install )</h1>
-You can pull, install & start the webuntu container using this command within the Docker Terminal:
+You can pull, install & start the webuntumac container using this command within the Docker Terminal:
 <pre>
-docker run -h webuntu -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntu
+docker run -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntumac
 </pre>
-Run webuntu with logging:
+Run webuntumac with logging:
 <pre>
-docker run -h webuntu -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -t -i mattinclude/webuntu
+docker run -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -t -i mattinclude/webuntumac
 </pre>
 
 <h1>Pull from Docker index</h1>
 <pre>
-docker pull mattinclude/webuntu
+docker pull mattinclude/webuntumac
 </pre>
 
 <h1>Build it yourself</h1>
 <pre>
-git clone https://github.com/mattinclude/webuntu.git
+git clone https://github.com/mattinclude/webuntumac.git
 <br>
-docker build --rm -t mattinclude/webuntu webuntu
+docker build --rm -t mattinclude/webuntumac webuntumac
 <br>
-docker run -d -h webuntu -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntu
+docker run -d -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntumac
 </pre>
-<h1>Connect to webuntu web-interface</h1>
+<h1>Connect to webuntumac web-interface</h1>
 
-Find webuntu's container IP address:
+Find webuntumac's container IP address:
 <pre>
 docker-machine ls
 </pre>
@@ -52,9 +52,9 @@ Navigate to this IP address using your web browser or launch the container's web
 
 <h1>How to Uninstall</h1>
 
-Stop & Remove webuntu using this command within the Docker Terminal:
+Stop & Remove webuntumac using this command within the Docker Terminal:
 <pre>
-docker stop $(docker ps -a -q | grep -v mattinclude/webuntu) && docker rmi -f mattinclude/webuntu
+docker stop $(docker ps -a -q | grep -v mattinclude/webuntumac) && docker rmi -f mattinclude/webuntumac
 </pre>
 Stop / Remove ALL docker containers:
 <pre>
@@ -71,7 +71,7 @@ sudo sed -i '1s/^/nameserver 8.8.8.8\n/' /etc/resolv.conf && exit
 web-gui: Cannot Type, Keyboard Input Not Detected. Click the title bar at the top of the novnc ubuntu window
 that says:
 <pre>
-Connected (unencrypted) to: webuntu:1
+Connected (unencrypted) to: webuntumac:1
 </pre>
 Your keyboard input now functions as expected.
 <h1>Credits</h1>

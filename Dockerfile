@@ -15,7 +15,7 @@ RUN npm install pm2 -g
 RUN pm2 update
 RUN pm2 install pm2-webshell
 RUN pm2 set pm2-webshell:username ubuntu
-RUN pm2 set pm2-webshell:password webuntu
+RUN pm2 set pm2-webshell:password webuntumac
 RUN sed -i -e 's/#force_color_prompt=yes/force_color_prompt=yes/g' /root/.bashrc
 RUN echo 'cat /etc/motd && echo " "' >> /root/.bashrc
 RUN cd /root && git clone https://github.com/kanaka/noVNC.git && \
