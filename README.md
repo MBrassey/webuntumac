@@ -4,7 +4,7 @@ webuntumac is a docker container usable on Windows, Linux and Mac. The container
 <h1>Prerequisites</h1>
 * <a href="https://www.docker.com/">Docker</a>
 * A web browser
-
+* A MAC.
 <h1>Features</h1>
 <ul>
   <li>ubuntu root [web] shell with the ability to open many concurrent shells.</li>
