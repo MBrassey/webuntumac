@@ -1,10 +1,10 @@
 <h1>webuntumac </h1>
 
-webuntumac is a docker container usable on Windows, Linux and Mac. The container allows you to launch an ubuntu openbox gui, bash-shell and system statistics from your web browser. This container is one of the quickest ways to run a Linux GUI on Windows and Mac. This container offers a useful base image, edit the Dockerfile and research/fork/clone this repository to customize your own sandboxed host container.
+ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.                                                                      
 <h1>Prerequisites</h1>
-* <a href="https://www.docker.com/">Docker</a>
+* <a href="https://docs.docker.com/engine/installation/mac/#/docker-for-mac">Docker for Mac</a>
 * A web browser
-* A MAC.
+* A Mac.
 <h1>Features</h1>
 <ul>
   <li>ubuntu root [web] shell with the ability to open many concurrent shells.</li>
@@ -38,18 +38,9 @@ docker run -d -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i ma
 </pre>
 <h1>Connect to webuntumac web-interface</h1>
 
-Find webuntumac's container IP address:
-<pre>
-docker-machine ls
-</pre>
-Or..
-<pre>
-docker-machine ip default
-</pre>
+Open a web browser and navigate to: <b>localhost</b>.
 
-Navigate to this IP address using your web browser or launch the container's web preview using Kitematic.
-
-<h1>How to Uninstall</h1>
+<h1>How to Uninstall (Run all three commands bellow)</h1>
 
 Stop & Remove webuntumac using this command within the Docker Terminal:
 <pre>

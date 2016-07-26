@@ -17,7 +17,7 @@ then follow the on screen instructions (will appear on lower left corner).
 <strong>
 web-gui: Cannot Type, Keyboard Input Not Detected.
 </strong><br>
-Click the title bar at the top of the novnc ubuntu window that says:
+Click the title bar at the top of the noVNC ubuntu window that says:
 <br><br><code>
 Connected (unencrypted) to: webuntumac:1
 </code><br><br>
