@@ -32,6 +32,6 @@ docker stop $(docker ps -a -q | grep -v mattinclude/webuntumac) && docker rmi -f
 <br><br>
 Stop / Remove ALL docker containers:
 <br><br><code>
-docker stop $(docker ps -a -q) <br>
+docker stop $(docker ps -a -q) <br><br>
 docker rm $(docker ps -a -q)
 </code></p><br>
