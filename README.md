@@ -2,9 +2,9 @@
 
 ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.                                                                      
 <h1>Prerequisites</h1>
+* A Mac
 * <a href="https://docs.docker.com/engine/installation/mac/#/docker-for-mac">Docker for Mac</a>
 * A web browser
-* A Mac
 <h1>Features</h1>
 <ul>
   <li>ubuntu root [web] shell with the ability to open many concurrent shells.</li>
