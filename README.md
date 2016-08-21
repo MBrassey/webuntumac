@@ -10,6 +10,7 @@ ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.
   <li>ubuntu root [web] shell with the ability to open many concurrent shells.</li>
   <li>openbox [web] GUI with firefox pre-installed, multiple desktops for productivity.</li>
   <li>vmstat [web] live system statistics.</li>
+  <li>includes: python, tmuxs, vim, nano, feh, terminator, unzip, wget and atop.</li>
 </ul><br>
 <img src="https://github.com/mattinclude/webuntumac/blob/master/initialize/webuntumac_screenie.png">
 
