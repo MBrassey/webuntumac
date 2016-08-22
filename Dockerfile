@@ -43,6 +43,7 @@ COPY initialize/user.js /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js
 COPY initialize/index.tty /root/.pm2/node_modules/pm2-webshell/node_modules/tty.js/static/index.html
 COPY initialize/config.py /usr/share/terminator/terminatorlib/config.py
 COPY initialize/motd /etc/motd
+COPY initialize/.bashrc /root/.bashrc
 COPY launch /var/www/launch
 
 
