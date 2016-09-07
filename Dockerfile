@@ -42,7 +42,7 @@ COPY initialize/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY initialize/config.py /usr/share/terminator/terminatorlib/config.py
 COPY initialize/initialize.htm /var/www/index.html
 COPY initialize/.htaccess /var/www/.htaccess
-COPY initialize/tmux.conf /etc/tmux.conf
+COPY initialize/tmux.conf /root/.tmux.conf
 COPY initialize/.bashrc /root/.bashrc
 COPY initialize/motd /etc/motd
 
