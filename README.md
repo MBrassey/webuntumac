@@ -14,8 +14,9 @@ ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.
 </ul><br>
 <img src="https://github.com/mattinclude/webuntumac/blob/master/initialize/webuntumac_screenie.png">
 
-<h1>Donate</h1>
-[![Please_Donate](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/mattinclude/)
+# Donate
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYEHRWKYCD3A2)
 
 <h1>Run from Docker index ( install )</h1>
 You can pull, install & start the webuntumac container using this command within the Docker Terminal:
