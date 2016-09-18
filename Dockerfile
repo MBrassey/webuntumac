@@ -7,8 +7,10 @@ ENV DEBIAN_FRONTEND noninteractive
 ADD initialize/startup.sh /startup.sh
 
 RUN apt-get update && apt-get install -y apache2 supervisor npm \
-    git x11vnc wget python python-numpy unzip atop xvfb firefox openbox vim feh nano menu terminator tmux
+    git x11vnc wget python python-numpy unzip atop xvfb firefox \
+    openbox vim feh nano menu terminator tmux ruby ruby-dev ruby-bundler
 
+RUN rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /var/lock/apache2 /var/run/apache2 /var/log/supervisor
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN npm install pm2 -g
