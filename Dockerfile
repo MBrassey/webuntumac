@@ -44,7 +44,7 @@ COPY initialize/initialize.htm /var/www/index.html
 COPY initialize/.htaccess /var/www/.htaccess
 COPY initialize/tmux.conf /root/.tmux.conf
 COPY initialize/.bashrc /root/.bashrc
-COPY initialize/motd /etc/motd
+COPY initialize/motd /etc/motd.tail
 
 COPY launch /var/www/launch
 
