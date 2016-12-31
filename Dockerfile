@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER Matthew L. Abrasax version: 0.1
+MAINTAINER Matthew A. Brassey version: 0.1
 
 ENV DEBIAN_FRONTEND noninteractive
 
