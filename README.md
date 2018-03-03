@@ -24,6 +24,10 @@ Run webuntumac with logging:
 <pre>
 docker run -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -t -i mattinclude/webuntumac
 </pre>
+Runn webuntumac with persistant storage directory:
+<pre>
+docker run -v webuntumac:/root/storage -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntumac
+</pre>
 
 <h1>Pull from Docker index</h1>
 <pre>
