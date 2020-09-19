@@ -1,4 +1,3 @@
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KYEHRWKYCD3A2)
 <h1>webuntumac (depreciated)</h1>
 
 ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.                                                                      
@@ -13,7 +12,8 @@ ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.
   <li>vmstat [web] live system statistics.</li>
   <li>includes: python, tmux, vim, nano, feh, terminator, unzip, wget and atop.</li>
 </ul><br>
-<img src="https://github.com/mattinclude/webuntumac/blob/master/initialize/webuntumac_screenie.png">
+
+[<img src="/initialize/webuntumac_screenie.png">](https://brassey.io/)
 
 <h1>Run from Docker index ( install )</h1>
 You can pull, install & start the webuntumac container using this command within the Docker Terminal:
