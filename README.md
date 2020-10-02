@@ -4,10 +4,23 @@ ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
+#### Table of Contents
+
+* [Requirements](#Requirements)
+* [Features](#Features)
+* [Installation](#Installation)
+* [Pull](#Pull)
+* [Build](#Build)
+* [Uninstall](#Uninstall)
+* [Connect](#Connect)
+* [Troubleshooting](#Troubleshooting)
+* [Questions](#Questions)
+* [License](#License)
+
 #### Requirements
 
     A Mac
-    <a href="https://docs.docker.com/engine/installation/mac/#/docker-for-mac">Docker for Mac</a>
+    Docker for Mac
     A web browser
 
 #### Features
@@ -19,7 +32,7 @@ ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.
 
 [<img src="/initialize/webuntumac_screenie.png">](https://brassey.io/)
 
-#### Run from Docker index ( install )
+#### Installation
 You can pull, install & start the webuntumac container using this command within the Docker Terminal:
 <pre>
 docker run -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntumac
@@ -33,11 +46,11 @@ Run webuntumac with persistent storage directory:
 docker run -v webuntumac:/root/storage -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntumac
 </pre>
 
-#### Pull from Docker index
+#### Pull
 
     docker pull mattinclude/webuntumac
 
-#### Build it yourself
+#### Build
 
 <pre>
 git clone https://github.com/mattinclude/webuntumac.git
@@ -47,11 +60,11 @@ docker build --rm -t mattinclude/webuntumac webuntumac
 docker run -d -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntumac
 </pre>
 
-#### Connect to webuntumac web-interface
+#### Connect
 
 Open a web browser and navigate to: <b>localhost</b>.
 
-#### How to Uninstall (Run all three commands bellow)
+#### Uninstall
 
 Stop & Remove webuntumac using this command within the Docker Terminal:
 <pre>
