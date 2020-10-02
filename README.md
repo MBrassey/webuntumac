@@ -14,6 +14,7 @@ ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.
 * [Uninstall](#Uninstall)
 * [Connect](#Connect)
 * [Troubleshooting](#Troubleshooting)
+* [Dependencies](#Dependencies)
 * [Questions](#Questions)
 * [License](#License)
 
@@ -89,10 +90,14 @@ that says:
 Connected (unencrypted) to: webuntumac:1
 </pre>
 Your keyboard input now functions as expected.
-<h1>Credits</h1>
-<pre>
-System Platforms: ubuntu, pm2, noVNC, web-vmstats
-</pre>
+
+#### Dependencies
+
+    ubuntu
+    pm2
+    noVNC
+    web-vmstats
+
 
 #### Questions
 Contact me at [matt@brassey.io](mailto:matt@brassey.io) with any questions or comments.
