@@ -98,7 +98,6 @@ Your keyboard input now functions as expected.
     noVNC
     web-vmstats
 
-
 #### Questions
 Contact me at [matt@brassey.io](mailto:matt@brassey.io) with any questions or comments.
 
