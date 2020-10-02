@@ -1,4 +1,4 @@
-#### webuntumac (depreciated)
+## webuntumac (depreciated)
 
 ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.
 
@@ -34,6 +34,7 @@ ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.
 [<img src="/initialize/webuntumac_screenie.png">](https://brassey.io/)
 
 #### Installation
+
 You can pull, install & start the webuntumac container using this command within the Docker Terminal:
 <pre>
 docker run -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntumac
