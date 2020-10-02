@@ -1,21 +1,25 @@
-<h1>webuntumac (depreciated)</h1>
+#### webuntumac (depreciated)
 
-ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.                                                                      
-<h1>Prerequisites</h1>
-* A Mac
-* <a href="https://docs.docker.com/engine/installation/mac/#/docker-for-mac">Docker for Mac</a>
-* A web browser
-<h1>Features</h1>
-<ul>
-  <li>ubuntu root [web] shell with the ability to open many concurrent shells.</li>
-  <li>openbox [web] GUI with firefox pre-installed, multiple desktops for productivity.</li>
-  <li>vmstat [web] live system statistics.</li>
-  <li>includes: python, tmux, vim, nano, feh, terminator, unzip, wget and atop.</li>
-</ul><br>
+ubuntu 4.4.15-moby x86_64 GNU/Linux accessible from the browser, on your mac.
+
+![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
+
+#### Requirements
+
+    A Mac
+    <a href="https://docs.docker.com/engine/installation/mac/#/docker-for-mac">Docker for Mac</a>
+    A web browser
+
+#### Features
+
+* ubuntu root [web] shell with the ability to open many concurrent shells.
+* openbox [web] GUI with firefox pre-installed, multiple desktops for productivity.
+* vmstat [web] live system statistics.
+* includes: python, tmux, vim, nano, feh, terminator, unzip, wget and atop.
 
 [<img src="/initialize/webuntumac_screenie.png">](https://brassey.io/)
 
-<h1>Run from Docker index ( install )</h1>
+#### Run from Docker index ( install )
 You can pull, install & start the webuntumac container using this command within the Docker Terminal:
 <pre>
 docker run -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntumac
@@ -29,12 +33,12 @@ Run webuntumac with persistent storage directory:
 docker run -v webuntumac:/root/storage -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntumac
 </pre>
 
-<h1>Pull from Docker index</h1>
-<pre>
-docker pull mattinclude/webuntumac
-</pre>
+#### Pull from Docker index
 
-<h1>Build it yourself</h1>
+    docker pull mattinclude/webuntumac
+
+#### Build it yourself
+
 <pre>
 git clone https://github.com/mattinclude/webuntumac.git
 <br>
@@ -42,11 +46,12 @@ docker build --rm -t mattinclude/webuntumac webuntumac
 <br>
 docker run -d -h webuntumac -p 6080:6080 -p 369:369 -p 80:80 -p 88:8010 -d -i mattinclude/webuntumac
 </pre>
-<h1>Connect to webuntumac web-interface</h1>
+
+#### Connect to webuntumac web-interface
 
 Open a web browser and navigate to: <b>localhost</b>.
 
-<h1>How to Uninstall (Run all three commands bellow)</h1>
+#### How to Uninstall (Run all three commands bellow)
 
 Stop & Remove webuntumac using this command within the Docker Terminal:
 <pre>
@@ -58,7 +63,8 @@ docker stop $(docker ps -a -q) <br>
 docker rm $(docker ps -a -q)
 </pre>
 
-<h1>Troubleshooting</h1>
+#### Troubleshooting
+
 Docker: dial tcp: lookup index.docker.io: no such host
 <pre>
 docker-machine ssh default <br>
@@ -74,3 +80,11 @@ Your keyboard input now functions as expected.
 <pre>
 System Platforms: ubuntu, pm2, noVNC, web-vmstats
 </pre>
+
+#### Questions
+Contact me at [matt@brassey.io](mailto:matt@brassey.io) with any questions or comments.
+
+#### License
+READMEGenesis is published under the __CC0_1.0_Universal__ license.
+
+> The Creative Commons CC0 Public Domain Dedication waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.
